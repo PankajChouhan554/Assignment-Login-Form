@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg,skyblue, violet);
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            height: 75%;
+            width: 25%;
+            border: 3px solid black;
+            border-radius: 20px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .username, .password{
+            margin-bottom: 20px;
+            margin-left: 20px;
+            font-size: 20px;
+            /* border: 1px solid black; */
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input{
+            width: 80%;
+            border-radius: 2px;
+            font-size: 15px;
+        }
+        form>h1{
+            margin-bottom: 50px;
+            text-decoration:underline;
+        }
+        form>h2{
+            margin-left: 20px;
+            font-size: 15px;
+            color: navy;
+        }
+        button{
+            background: linear-gradient(90deg, skyblue, violet);
+            margin-top: 30px;
+            margin-left: 130px;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: violet;
+            color: white;
+            transform: scale(1.1);
+        }
+        p{
+            margin-left: 70px;
+            margin-top: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">
+        <form action="">
+            <h1>Login form</h1>
+            <div class="username"> 
+                <label for="">Username</label>
+                <input type="text" placeholder="Gmail">
+            </div>
+            <div class="password">
+                <label for="">Password</label>
+                <input type="password" value="">
+            </div>
+            <h2>forget password?</h2>
+            <button type="submit">Submit</button>
+        </form>
+        <p>If not a member? <a href="signupform.html">signup</a></p>
+        </div>
+    </div>
+</body>
+</html>
